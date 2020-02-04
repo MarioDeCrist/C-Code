@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "collatzSort.h"
 
-bool collatz_upload(int array[])
+Boolean collatz_upload(int array[])
 {
    FILE* collatz_file;
    int number, collatz;
@@ -20,9 +20,9 @@ bool collatz_upload(int array[])
    array[number] = 0;
    // close file
    fclose(collatz_file);
-   return true;
+   return True;
 error:
-   return false;
+   return False;
 }
 
 // copies the values from collatz from 1 dimentional Arr to a 2D one
