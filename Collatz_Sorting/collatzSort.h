@@ -8,10 +8,13 @@
 #define DBG
 #define COLLATZ_FILE "collatz.txt"
 
+// boolean declaration
+typedef enum {False, True} Boolean;
+
 // defined functions
 void collatz_copy_array( int array[], int ( *array_copy )[ 2 ] );
 void collatz_print_array( int ( *array_copy )[ 2 ] );
-bool collatz_upload( int array[] );
+Boolean collatz_upload( int array[] );
 void collatz_selection_sort( int( *array_copy )[ 2 ] );
 
 #endif
