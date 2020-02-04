@@ -1,0 +1,2 @@
+parity: parity_program_driver.c parity.c
+	gcc -o parity parity_program_driver.c parity.c -I
